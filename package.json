@@ -1,6 +1,6 @@
 {
   "name": "@mcrowe/styled",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Style components in pure Javascript",
   "author": "Mitch Crowe <code@mitchcrowe.com> (http://www.mitchcrowe.com)",
   "license": "ISC",
