@@ -1,10 +1,33 @@
 # styled
 
-Style components in pure Javascript
+Style components in pure Javascript.
 
 ## Usage
 
 > npm install @mcrowe/styled --save
+
+```js
+import styled from '@mcrowe/styled'
+
+const Box = styled('div', {
+  display: 'flex'
+})
+
+const Row = styled(Box, {
+  flexDirection: 'row'
+})
+
+const Button = styled('button', props => ({
+  padding: 12,
+  backgroundColor: props.primary ? 'green' : 'gray'
+}))
+
+const MyComponent = () =>
+  <Row>
+    <Button>No</Button>
+    <Button primary>Yes</Button>
+  </Row>
+```
 
 ## Development
 
