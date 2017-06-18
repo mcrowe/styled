@@ -9,7 +9,8 @@ function styled(comp, style?) {
 
   return props => {
     const compStyle = typeof style == 'function' ? style(props) : style
-    const compProps = {...props, style: {...props.style, ...compStyle}}
+    const combinedStyle = props.isStyled ? {...compStyle, ...props.style} : {...props.style, ...compStyle}
+    const compProps = {...props, style: combinedStyle, isStyled: true}
     return React.createElement(comp, compProps)
   }
 }
