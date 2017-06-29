@@ -7,4 +7,4 @@ import * as React from 'react';
  *             Defaults to 'div'.
  * @param style An object of styles, or a function of props which returns such an object.
  */
-export default function styled(comp: string, style: any): React.ClassicComponentClass<{}>;
+export default function styled(comp: any, style: any): React.ClassicComponentClass<{}>;

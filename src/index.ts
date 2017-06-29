@@ -8,7 +8,7 @@ import * as React from 'react'
  *             Defaults to 'div'.
  * @param style An object of styles, or a function of props which returns such an object.
  */
-export default function styled(comp = 'div', style) {
+export default function styled(comp: any = 'div', style) {
 
   // Return a new component which renders the given component with styling applied.
   return React.createClass({
