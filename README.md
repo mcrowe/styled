@@ -1,6 +1,8 @@
 # styled
 
-Style components in pure Javascript.
+Styled components for React in pure Javascript. Works with React and React Native. Because [styled-components](https://github.com/styled-components/styled-components) almost get it right. Styling in pure Javascript has massive simplicity advantages.
+
+__Caveat__: Currently this creates inline styles on every element. This may have *small* performance implications depending on your app. Benchmark and decide if this is a problem.
 
 ## Usage
 
